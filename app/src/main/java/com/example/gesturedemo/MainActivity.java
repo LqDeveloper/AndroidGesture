@@ -13,6 +13,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     TextView textView1;
     TextView textView2;
+    TextView textView3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +23,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         textView2 = findViewById(R.id.saveGesture);
         textView2.setOnClickListener(this);
+
+        textView3 = findViewById(R.id.recognizeGesture);
+        textView3.setOnClickListener(this);
     }
 
 
@@ -35,6 +39,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case  R.id.saveGesture:
                 intent = new Intent(MainActivity.this,SaveActivity.class);
+                startActivity(intent);
+                break;
+            case  R.id.recognizeGesture:
+                intent = new Intent(MainActivity.this,RecognizeActivity.class);
                 startActivity(intent);
                 break;
         }
