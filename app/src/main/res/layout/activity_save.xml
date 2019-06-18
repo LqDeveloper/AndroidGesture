@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SaveActivity">
+
+    <!--<TextView-->
+    <!--android:id="@+id/addGesture"-->
+    <!--android:layout_width="300dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:text="添加手势"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_marginTop="30dp"-->
+    <!--android:background="#0f0"-->
+    <!--android:textColor="#f00"-->
+    <!--android:textSize="20sp"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gesture"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gestureColor="#0f0"
+        android:gestureStrokeType="multiple"></android.gesture.GestureOverlayView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+</LinearLayout>
